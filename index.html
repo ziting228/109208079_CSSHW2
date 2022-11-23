@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+span{
+    color: navy;
+    border: 1px solid black;
+}
+
+.extra span{
+    color: inherit;
+}
+
+#myheader{
+    background-color: khaki;
+    padding: 20px;
+    text-align: left;
+    font-size: 15pt;
+}
+
+.intro{
+    padding: 40px;
+    text-align:center;
+    font-size: 16pt;
+}
+
+body{
+    background-color: gainsboro;
+    font-family: monospace;
+}
+
+
+</style>
+<body >
+<table border="1">
+<form method="post" action = "https://www.deitel.com">
+
+    <textarea rows="5" cols="88"> 
+    <span>About--1090208079</span>
+    </textarea>
+    <!--第一行-->
+    <tr>
+        <!--merge 3 columns（行）-->
+        <td rowspan="3">
+            <img src="cuteDog1.jpg" alt="cannot display the photo" width="100" height="200">
+            <p><span id="myheader">personal photo</span></p>
+        </td>
+        <!--merge 2 rows（列）-->
+        <td colspan="2">
+            <p>Name:
+            <input name="name" type="text" size="25" maxlength="30" class="intro"></p>
+            <span>Gender:</span>
+            <input type="radio" name="gender" value="Male"><span>Male</span>
+            <input type="radio" name="gender" value="Female"><span>Female</span>
+            <input type="radio" name="gender" value="Other"><span>Other</span>
+        </td>
+
+    </tr>
+
+    <!--第二行-->
+    <tr>
+        <td>
+            <span >Country:</span>
+            <select name="country">
+                <option value="Taipei" selected>Taipei </option>
+                <option value="Taipei">Tainan</option>
+                <option value="Taipei">Taichung</option>
+                <option value="Taipei">Taoyuan</option>
+            </select>
+        </td>
+        <td>
+            <span>Birthday:</span>
+            <input type="date">
+        </td>
+    </tr>
+
+    <!--第三行-->
+    <tr>
+        <td colspan="2">
+            <span>E-mail:</span>
+            <input E-mail="E-mail" type="text" size ="25" maxlength="40">
+        </td>
+    </tr>
+
+    <!--第四行-->
+    <tr>
+        <td>
+            <p>Hobby</p>
+        </td>
+        <td colspan="2" id="myheader">
+            <input type="checkbox" name="Hobby" value="Swimming"> <span>Swimming</span>
+            <input type="checkbox" name="Hobby" value="Volleyball"> <span>Volleyball</span>
+            <input type="checkbox" name="Hobby" value="Movie"> <span>Movie</span>
+            <input type="checkbox" name="Hobby" value="Game"> <span>Game</span>
+            <input type="checkbox" name="Hobby" value="Sleep"> <span>Sleep</span>
+        </td>
+    </tr>
+
+    <!--第五行-->
+    <tr>
+        <td>
+            <p>Skill</p>
+        </td>
+        <td colspan="2">
+            <input type="checkbox" name="Skill" value="Java"> <span>Java</span>
+            <input type="checkbox" name="Skill" value="HTML"> <span>HTML</span>
+            <input type="checkbox" name="Skill" value="Python"> <span>Python</span>
+            <input type="checkbox" name="Skill" value="Microsoft Office"> <span>Microsoft Office</span>
+            <input type="checkbox" name="Skill" value="Preimere"> <span>Premiere</span>
+        </td>
+    </tr>
+
+    <!--第六行-->
+    <tr>
+        <td>
+            <p>Say Somthing</p>
+        </td> 
+        <td colspan ="2">
+            <textarea rows="5" cols="70">Say something here.</textarea>
+        </td>
+        <td style="color:green">
+            <em> Click<a href ="secondpage.html"> here </a></em>
+        </td>
+        <td style="color:blueviolet">
+            <em> Or click<a href ="thirdpage.html"> here </a></em>
+        </td>
+        <td style="color:darkkhaki">
+            <em> Also click<a href ="forthpage.html">here</a></em>
+        </td>
+    </tr>
+
+    <!--按鈕-->
+    <tr>
+        <td colspan="3">
+            <button type="submit" value="Submit">提交</button>
+            <button type="reset" value="Reset">清除</button>
+        </td>
+    </tr>
+</form>
+</table>
+</body>
+</html>

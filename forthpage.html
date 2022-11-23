@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<style>
+span{
+    color: darkcyan;
+    background-color: beige;
+    border: 10px solid black;
+}
+
+.extra span{
+    color: inherit;
+}
+
+#myheader{
+    background-color: khaki;
+    padding: 20px;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.intro{
+    padding: 40px;
+    text-align:center;
+    font-size: 16pt;
+}
+
+body{
+    background-color: gainsboro;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+</style>
+<body >
+<table border="1">
+<form method="post" action = "https://www.deitel.com">
+
+    <textarea rows="5" cols="88"> 
+    <span>Welcome!</span>
+    </textarea>
+    <!--第一行-->
+    <tr>
+        <!--merge 3 columns（行）-->
+        <td rowspan="3">
+            <img src="cutePic2.jpg" alt="cannot display the photo" width="100" height="200">
+            <p><span class="intro"> personal photo</span></p>
+        </td>
+        <!--merge 2 rows（列）-->
+        <td colspan="2">
+            <p>Name:
+            <input name="name" type="text" size="25" maxlength="30" class="intro"></p>
+            <span>Gender:</span>
+            <input type="radio" name="gender" value="Male"><span>Male</span>
+            <input type="radio" name="gender" value="Female"><span>Female</span>
+            <input type="radio" name="gender" value="Other"><span>Other</span>
+        </td>
+
+    </tr>
+
+    <!--第二行-->
+    <tr>
+        <td>
+            <span >Country:</span>
+            <select name="country">
+                <option value="Taipei" selected>Taipei </option>
+                <option value="Taipei">Tainan</option>
+                <option value="Taipei">Taichung</option>
+                <option value="Taipei">Taoyuan</option>
+            </select>
+        </td>
+        <td>
+            <span>Birthday:</span>
+            <input type="date">
+        </td>
+        <td style="color:chocolate">
+            <em>thank you!</em>
+        </td>
+    </tr>
+
+</form>
+</table>
+</body>
+</html>
